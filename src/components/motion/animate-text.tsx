@@ -15,7 +15,15 @@ interface AnimateTextProps {
     className?: string;
 }
 
-export function AnimateText({ as = "p", content, stagger = 0.02, initial, animate, className }: AnimateTextProps) {
+export function AnimateText(
+    {
+        as = "p",
+        content,
+        stagger = 0.02,
+        initial,
+        animate,
+        className,
+    }: AnimateTextProps) {
 
     const MotionTag = motion.create(as) as typeof motion.div;
 

@@ -21,7 +21,10 @@ export function Heading() {
                                  animate={ { filter: "blur(0px)" } }/>
                 </h2>
                 <h3 className="text-center text-4xl md:text-5xl lg:text-6xl">
-                    <motion.p initial={ { y: 10, opacity: 0 } } animate={ { y: 0, opacity: 1 } }>ctrl + f</motion.p>
+                    <motion.p initial={ { y: 10, opacity: 0 } }
+                              animate={ { y: 0, opacity: 1 } }>
+                        ctrl + f
+                    </motion.p>
                 </h3>
             </div>
         </section>
