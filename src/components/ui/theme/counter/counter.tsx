@@ -15,7 +15,7 @@ export function Counter({ value = 0, delay = 300 }: CounterProps) {
     useEffect(() => {
         const timer = setTimeout(() => {
             setCounter(value);
-        }, 300);
+        }, delay);
         return () => clearTimeout(timer);
     }, []);
 
