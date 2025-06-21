@@ -15,7 +15,6 @@ export function Heading() {
                 </h1>
                 <h2 className="text-center text-base sm:text-xl md:text-2xl lg:text-3xl">
                     <AnimateText className="gap-x-2"
-                                 stagger={ 0.05 }
                                  content={ [ "Each", "example", "includes", "ui", "&", "video", "explanation", "&", "pretty", "source", "code" ] }
                                  initial={ { filter: "blur(8px)" } }
                                  animate={ { filter: "blur(0px)" } }/>
@@ -23,7 +22,7 @@ export function Heading() {
                 <h3 className="text-center text-4xl md:text-5xl lg:text-6xl">
                     <motion.p initial={ { y: 10, opacity: 0 } }
                               animate={ { y: 0, opacity: 1 } }>
-                        ctrl + f
+                        <span className="text-shadow-lg text-shadow-slate-500/60">ctrl + f</span>
                     </motion.p>
                 </h3>
             </div>
