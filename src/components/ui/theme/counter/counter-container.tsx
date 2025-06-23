@@ -1,4 +1,5 @@
-import { Counter } from "@/components/ui/theme/counter/counter";
+import { AnimateCounter } from "@/components/ui/theme/counter/animate-counter";
+import { AnimateContent } from "@/components/ui/theme/counter/animate-content";
 
 export function CounterContainer() {
     return (
@@ -6,7 +7,7 @@ export function CounterContainer() {
             <div className="h-72 w-full bg-linear-to-tr from-cyan-400 to-purple-600">
                 <div className="size-full flex justify-center items-center flex-col gap-y-3">
                     <div className="text-white text-7xl lg:text-8xl duration-300 select-none">
-                        <Counter value={ 2028 } delay={ 0 }/>
+                        <AnimateCounter value={ 2028 } delay={ 0 }/>
                     </div>
                     <p className="text-white text-4xl">examples</p>
                 </div>
@@ -18,7 +19,7 @@ export function CounterContainer() {
                      backgroundSize: "20px 20px",
                      backgroundPosition: "center",
                  } }>
-
+                <AnimateContent titles={ [ "video", "ui", "pretty source code"] }/>
             </div>
         </div>
     )

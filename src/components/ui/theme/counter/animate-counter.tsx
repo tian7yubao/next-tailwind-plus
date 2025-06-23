@@ -3,12 +3,12 @@
 import { AnimateNumber } from "motion-plus/react"
 import { useEffect, useState } from "react";
 
-interface CounterProps {
+interface AnimateCounterProps {
     value?: number;
     delay?: number;
 }
 
-export function Counter({ value = 0, delay = 300 }: CounterProps) {
+export function AnimateCounter({ value = 0, delay = 300 }: AnimateCounterProps) {
 
     const [ counter, setCounter ] = useState(0);
 
